@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { UnitService } from '../../services/unit.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { UnitService } from 'src/app/services/unit.service';
 
 @Component({
-  selector: 'app-forms',
-  standalone: true,
-  imports: [ReactiveFormsModule],
-  templateUrl: './forms.component.html',
-  styleUrl: './forms.component.scss'
+  selector: 'app-form',
+  templateUrl: './form.component.html',
+  styleUrls: ['./form.component.scss']
 })
-export class FormsComponent implements OnInit {
+export class FormComponent implements OnInit {
   results: any[] = [];
   formGroup!: FormGroup;
 
@@ -34,4 +32,5 @@ export class FormsComponent implements OnInit {
   onClear(): void {
     this.formGroup.reset();
   }
+
 }
