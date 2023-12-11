@@ -16,10 +16,10 @@ header .logo-container {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-header .logo-container img {
-  height: 100px;
+  img {
+    height: 100px;
+  }
 }
 
 header .text-container {
@@ -29,28 +29,28 @@ header .text-container {
   align-items: flex-start;
   max-width: 80%;
   margin: 0 auto;
-}
 
-header .text-container .heading {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  margin-bottom: 24px;
-  gap: 16px;
-}
+  h1 {
+    font-size: 34px;
+    color: var(--dark-grey);
+  }
 
-header .text-container .heading .heading-border {
-  height: 8px;
-  width: 40%;
-  background-color: var(--dark-grey);
-}
+  p {
+    color: var(--light-grey);
+  }
 
-header .text-container h1 {
-  font-size: 34px;
-  color: var(--dark-grey);
-}
+  .heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 16px;
 
-header .text-container p {
-  color: var(--light-grey);
+    .heading-border {
+      height: 8px;
+      width: 40%;
+      background-color: var(--dark-grey);
+    }
+  }
 }
